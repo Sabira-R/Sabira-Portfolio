@@ -28,6 +28,21 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
 
+    /* Light theme overrides (toggle via `body[data-theme="light"]`) */
+    body[data-theme="light"]{
+      --bg:#f7f9fc;
+      --bg-2:#ffffff;
+      --glass: rgba(2,6,23,0.03);
+      --glass-2: rgba(2,6,23,0.02);
+      --accent-1: #7b3cff; /* keep violet */
+      --accent-2: #3bd7ff; /* keep blue */
+      --accent-glow: 0 8px 28px rgba(138,63,252,0.08), 0 3px 10px rgba(59,215,255,0.03);
+      --muted: #475569; /* darker muted for light bg */
+      --white: #071526; /* primary text color on light theme */
+      --glass-border: rgba(2,6,23,0.06);
+      --card-radius: 14px;
+    }
+
     /* Reset / base */
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -312,6 +327,7 @@
         <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open menu">
           ☰
         </button>
+        <button id="theme-toggle" class="ghost" aria-pressed="false" aria-label="Toggle theme">🌙</button>
         <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
           <a href="#home" data-target="home" class="nav-link mobile">Home</a>
           <a href="#about" data-target="about" class="nav-link mobile">About</a>
@@ -1069,6 +1085,37 @@
         n.style.animation = 'none';
       });
     }
+
+    /* =========================================================================
+       Theme toggle: persist user preference and apply light/dark
+       ========================================================================= */
+    (function(){
+      const themeToggle = document.getElementById('theme-toggle');
+      const rootBody = document.body;
+      function applyTheme(theme){
+        if(!theme) return;
+        rootBody.setAttribute('data-theme', theme);
+        try{ localStorage.setItem('theme', theme); }catch(e){}
+        if(themeToggle){
+          themeToggle.textContent = theme === 'light' ? '🌞' : '🌙';
+          themeToggle.setAttribute('aria-pressed', String(theme === 'light'));
+        }
+      }
+      try{
+        const saved = localStorage.getItem('theme');
+        const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        const theme = saved || (prefersLight ? 'light' : 'dark');
+        applyTheme(theme);
+      }catch(e){
+        applyTheme('dark');
+      }
+      if(themeToggle){
+        themeToggle.addEventListener('click', ()=>{
+          const current = rootBody.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+          applyTheme(current === 'light' ? 'dark' : 'light');
+        });
+      }
+    })();
   </script>
 </body>
 </html>
