@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sabira Rahman — Junior Frontend & App Developer</title>
-  <meta name="description" content="Portfolio — Sabira Rahman. Building modern, responsive, and user-focused digital experiences." />
+  <title>Sabira Rahman — Computer Science Student & Software Engineer</title>
+  <meta name="description" content="Portfolio — Sabira Rahman, a Computer Science student with experience in MERN stack, backend systems, and data-driven applications." />
   <!-- Theme & color palette: dark, purple/violet accent -->
   <style>
     /* =========================
@@ -216,6 +216,19 @@
     .badge{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
     .project .actions{display:flex;gap:10px}
 
+    /* EDUCATION / EXPERIENCE / CERTIFICATIONS */
+    .edu-grid,.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+    .edu-card,.cert-card,.exp-card{
+      padding:18px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .timeline{display:grid;gap:16px}
+    .exp-role{margin:0 0 6px;font-size:18px}
+    .exp-org{color:var(--muted);font-weight:600;margin:0 0 10px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .exp-list{margin:0;padding-left:18px;color:var(--muted)}
+    .exp-list li{margin-bottom:8px}
+
     /* CONTACT */
     .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
     .form .field{display:flex;flex-direction:column;margin-bottom:12px}
@@ -278,7 +291,7 @@
         <div class="logo" aria-hidden="true">SR</div>
         <div>
           <div style="font-weight:700">Sabira Rahman</div>
-          <div style="font-size:12px;color:var(--muted)">Junior Frontend • App Developer</div>
+          <div style="font-size:12px;color:var(--muted)">CSE Student • Software & Data Engineer</div>
         </div>
       </div>
 
@@ -287,7 +300,10 @@
           <li><a href="#home" data-target="home" class="nav-link active">Home</a></li>
           <li><a href="#about" data-target="about" class="nav-link">About</a></li>
           <li><a href="#skills" data-target="skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" data-target="education" class="nav-link">Education</a></li>
+          <li><a href="#experience" data-target="experience" class="nav-link">Experience</a></li>
           <li><a href="#projects" data-target="projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" data-target="certifications" class="nav-link">Certifications</a></li>
           <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -300,7 +316,10 @@
           <a href="#home" data-target="home" class="nav-link mobile">Home</a>
           <a href="#about" data-target="about" class="nav-link mobile">About</a>
           <a href="#skills" data-target="skills" class="nav-link mobile">Skills</a>
+          <a href="#education" data-target="education" class="nav-link mobile">Education</a>
+          <a href="#experience" data-target="experience" class="nav-link mobile">Experience</a>
           <a href="#projects" data-target="projects" class="nav-link mobile">Projects</a>
+          <a href="#certifications" data-target="certifications" class="nav-link mobile">Certifications</a>
           <a href="#contact" data-target="contact" class="nav-link mobile">Contact</a>
         </div>
       </div>
@@ -321,10 +340,10 @@
                 <div class="role-typing" id="role-typing" aria-live="polite"></div>
                 <div class="typing-caret" aria-hidden="true"></div>
               </div>
-              <p class="hero-para">Building modern, responsive, and user-focused digital experiences. I craft intuitive front-ends and thoughtful app UI that delight users while solving real problems.</p>
+              <p class="hero-para">I am a motivated Computer Science student at BRAC University with hands-on experience in MERN stack development, backend systems, and database-driven applications. I am interested in software engineering and data-oriented systems, with practical experience building real-world platforms in cross-functional teams.</p>
               <div class="hero-cta">
-                <button class="btn" onclick="scrollToSection('projects')">View My Work</button>
-                <button class="ghost" onclick="scrollToSection('contact')">Contact Me</button>
+                <button class="btn" onclick="scrollToSection('experience')">View Experience</button>
+                <button class="ghost" onclick="scrollToSection('projects')">See Projects</button>
               </div>
             </div>
           </div>
@@ -364,7 +383,7 @@
       <div class="intro-title">
         <div>
           <p class="section-title">About</p>
-          <p class="section-sub">Passionate, creative, and growth-focused developer building responsive experiences.</p>
+          <p class="section-sub">Computer Science student focused on software engineering, backend systems, and data-driven product development.</p>
         </div>
       </div>
 
@@ -390,16 +409,15 @@
         <div class="bio glass" style="padding:20px">
           <h3 style="margin:0 0 8px">Hi — I'm Sabira</h3>
           <p>
-            I'm a Junior Frontend Developer and App Developer passionate about crafting delightful, accessible, and responsive user interfaces.
-            I specialize in building modern front-ends and hybrid app experiences, with a strong interest in UI/UX and learning the latest tools and platforms.
+            I am a Bangladeshi Computer Science student with a strong foundation in software engineering principles and practical development workflows.
+            My academic training and project work are centered on developing reliable systems, clean user experiences, and scalable backend solutions.
           </p>
           <p class="bio-desc" style="color:var(--muted)">
-            I enjoy translating designs into production-ready interfaces, optimizing performance, and experimenting with subtle motion to improve user experience.
-            I work with HTML5, CSS3, JavaScript, React, FlutterFlow, Supabase, MongoDB, and Node.js.
+            I bring experience across MERN stack applications, database-driven platforms, and team-based operations. I am especially interested in roles where software engineering and data-informed decision making intersect.
           </p>
           <div style="display:flex;gap:10px;margin-top:14px">
             <a class="btn" href="mailto:sabirar405@gmail.com">Email Me</a>
-            <a class="ghost" href="#projects" onclick="scrollToSection('projects')">See Projects</a>
+            <a class="ghost" href="#education" onclick="scrollToSection('education')">View Education</a>
           </div>
         </div>
       </div>
@@ -410,7 +428,7 @@
       <div class="intro-title">
         <div>
           <p class="section-title">Skills</p>
-          <p class="section-sub">Technical skills & tools I use to build modern apps.</p>
+          <p class="section-sub">Technical and professional skills for software, data, and operations-focused roles.</p>
         </div>
       </div>
 
@@ -421,7 +439,7 @@
             <div class="icon">H5</div>
             <div>
               <div class="name">HTML5</div>
-              <div style="font-size:13px;color:var(--muted)">Semantic markup</div>
+              <div style="font-size:13px;color:var(--muted)">Web foundation</div>
             </div>
           </div>
           <div class="bar" aria-hidden="true"><div class="fill" data-fill="95%"></div></div>
@@ -432,7 +450,7 @@
             <div class="icon">C3</div>
             <div>
               <div class="name">CSS3</div>
-              <div style="font-size:13px;color:var(--muted)">Responsive & modern UI</div>
+              <div style="font-size:13px;color:var(--muted)">Responsive interface design</div>
             </div>
           </div>
           <div class="bar"><div class="fill" data-fill="92%"></div></div>
@@ -442,19 +460,41 @@
           <div style="display:flex;align-items:center;gap:12px">
             <div class="icon">JS</div>
             <div>
-              <div class="name">JavaScript</div>
-              <div style="font-size:13px;color:var(--muted)">Vanilla + DOM</div>
+              <div class="name">Python</div>
+              <div style="font-size:13px;color:var(--muted)">Problem solving and scripting</div>
             </div>
           </div>
-          <div class="bar"><div class="fill" data-fill="88%"></div></div>
+          <div class="bar"><div class="fill" data-fill="85%"></div></div>
         </div>
 
         <div class="skill glass">
           <div style="display:flex;align-items:center;gap:12px">
             <div class="icon">R</div>
             <div>
-              <div class="name">React</div>
-              <div style="font-size:13px;color:var(--muted)">Component-driven UI</div>
+              <div class="name">MERN Stack</div>
+              <div style="font-size:13px;color:var(--muted)">MongoDB, Express.js, React.js, Node.js</div>
+            </div>
+          </div>
+          <div class="bar"><div class="fill" data-fill="86%"></div></div>
+        </div>
+
+        <div class="skill glass">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div class="icon">F</div>
+            <div>
+              <div class="name">Databases & APIs</div>
+              <div style="font-size:13px;color:var(--muted)">MongoDB, MariaDB, Supabase, Postman</div>
+            </div>
+          </div>
+          <div class="bar"><div class="fill" data-fill="82%"></div></div>
+        </div>
+
+        <div class="skill glass">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div class="icon">SB</div>
+            <div>
+              <div class="name">Tools & Systems</div>
+              <div style="font-size:13px;color:var(--muted)">GitHub, Linux, Office, Workspace</div>
             </div>
           </div>
           <div class="bar"><div class="fill" data-fill="80%"></div></div>
@@ -462,47 +502,105 @@
 
         <div class="skill glass">
           <div style="display:flex;align-items:center;gap:12px">
-            <div class="icon">F</div>
-            <div>
-              <div class="name">FlutterFlow</div>
-              <div style="font-size:13px;color:var(--muted)">App prototyping</div>
-            </div>
-          </div>
-          <div class="bar"><div class="fill" data-fill="72%"></div></div>
-        </div>
-
-        <div class="skill glass">
-          <div style="display:flex;align-items:center;gap:12px">
-            <div class="icon">SB</div>
-            <div>
-              <div class="name">Supabase</div>
-              <div style="font-size:13px;color:var(--muted)">Realtime & auth</div>
-            </div>
-          </div>
-          <div class="bar"><div class="fill" data-fill="68%"></div></div>
-        </div>
-
-        <div class="skill glass">
-          <div style="display:flex;align-items:center;gap:12px">
             <div class="icon">MDB</div>
             <div>
-              <div class="name">MongoDB</div>
-              <div style="font-size:13px;color:var(--muted)">NoSQL databases</div>
+              <div class="name">Leadership & Coordination</div>
+              <div style="font-size:13px;color:var(--muted)">Project coordination and team leadership</div>
             </div>
           </div>
-          <div class="bar"><div class="fill" data-fill="65%"></div></div>
+          <div class="bar"><div class="fill" data-fill="90%"></div></div>
         </div>
 
         <div class="skill glass">
           <div style="display:flex;align-items:center;gap:12px">
             <div class="icon">N</div>
             <div>
-              <div class="name">Node.js</div>
-              <div style="font-size:13px;color:var(--muted)">Backend & APIs</div>
+              <div class="name">Communication & Documentation</div>
+              <div style="font-size:13px;color:var(--muted)">Analysis, reporting, and cross-team collaboration</div>
             </div>
           </div>
-          <div class="bar"><div class="fill" data-fill="70%"></div></div>
+          <div class="bar"><div class="fill" data-fill="88%"></div></div>
         </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-label="Education">
+      <div class="intro-title">
+        <div>
+          <p class="section-title">Education</p>
+          <p class="section-sub">Academic background in computer science with strong coursework in software and systems.</p>
+        </div>
+      </div>
+
+      <div class="edu-grid reveal">
+        <article class="edu-card glass">
+          <h4 style="margin:0 0 6px">BSc. in Computer Science Engineering</h4>
+          <p class="exp-org">BRAC University</p>
+          <div class="meta">2022 - 2026 | CGPA: 3.6</div>
+          <p style="color:var(--muted);margin:0">Relevant Coursework: Data Structures and Algorithms, Computer Networks, Database Systems, Software Engineering, Artificial Intelligence, Business and Human Communications, Introduction to Sociology.</p>
+        </article>
+
+        <article class="edu-card glass">
+          <h4 style="margin:0 0 6px">Higher Secondary Certificate (HSC)</h4>
+          <p class="exp-org">Viqarunnisa Noon School & College</p>
+          <div class="meta">2020</div>
+          <p style="color:var(--muted);margin:0">Completed pre-university studies with a focus on discipline, communication, and academic consistency.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-label="Experience">
+      <div class="intro-title">
+        <div>
+          <p class="section-title">Experience</p>
+          <p class="section-sub">Hands-on experience in software development, operations management, and team leadership.</p>
+        </div>
+      </div>
+
+      <div class="timeline reveal">
+        <article class="exp-card glass">
+          <h4 class="exp-role">Software & Data Engineer Intern</h4>
+          <p class="exp-org">Be Data Solutions</p>
+          <div class="meta">April 2026 - Present</div>
+          <ul class="exp-list">
+            <li>Assisted in software development and data-related tasks across internal projects.</li>
+            <li>Collaborated with team members on workflow coordination and technical problem-solving.</li>
+          </ul>
+        </article>
+
+        <article class="exp-card glass">
+          <h4 class="exp-role">Junior Member, Operations & Management</h4>
+          <p class="exp-org">DUBURI Project, BRAC University</p>
+          <div class="meta">2024 - 2025</div>
+          <ul class="exp-list">
+            <li>Coordinated cross-functional teams using digital communication and documentation tools to support project execution.</li>
+            <li>Collaborated with research, development, and logistics teams to ensure smooth workflows and timely completion.</li>
+          </ul>
+        </article>
+
+        <article class="exp-card glass">
+          <h4 class="exp-role">Director, Human Resource Management</h4>
+          <p class="exp-org">BUAPS (BRAC University Art & Photography Society)</p>
+          <div class="meta">June 2024 - July 2025</div>
+          <ul class="exp-list">
+            <li>Managed recruitment, onboarding, and internal HR operations using digital tools.</li>
+            <li>Maintained structured documentation and communication workflows.</li>
+            <li>Coordinated team schedules and supported event execution.</li>
+          </ul>
+        </article>
+
+        <article class="exp-card glass">
+          <h4 class="exp-role">Vice-President</h4>
+          <p class="exp-org">BUAPS (BRAC University Art & Photography Society)</p>
+          <div class="meta">July 2025 - February 2026</div>
+          <ul class="exp-list">
+            <li>Coordinated RED July photo exhibition in collaboration with BRACU Communications Team.</li>
+            <li>Supported planning and management for THE WAY by BRAC youth festival.</li>
+            <li>Managed participant-focused data documentation and workflow reporting for Art of Aperture 1.0.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -511,7 +609,7 @@
       <div class="intro-title">
         <div>
           <p class="section-title">Projects</p>
-          <p class="section-sub">Selected work — modern, responsive, and production-ready concepts.</p>
+          <p class="section-sub">Projects that strengthened my understanding of digital platforms, workflows, and user-centered problem solving.</p>
         </div>
       </div>
 
@@ -529,14 +627,13 @@
             </svg>
           </div>
           <div class="body">
-            <h4 style="margin:0">Modern Portfolio Website</h4>
-            <p style="margin:0;color:var(--muted)">A premium portfolio template built with HTML, CSS, and vanilla JavaScript. Focus on animation and performance.</p>
+            <h4 style="margin:0">Sphere - Student-Alumni Social Platform</h4>
+            <p style="margin:0;color:var(--muted)">Built a full-stack platform enabling networking and data-driven interaction among students, faculty, and alumni.</p>
             <div class="badges">
-              <span class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">JavaScript</span>
+              <span class="badge">MongoDB</span><span class="badge">Node.js</span><span class="badge">React.js</span><span class="badge">Vercel</span>
             </div>
             <div class="actions" style="margin-top:8px;display:flex;gap:10px">
-              <a class="ghost" href="#" onclick="openDemo(event)">Live Demo</a>
-              <a class="ghost" href="#" onclick="openGit(event)">GitHub</a>
+              <a class="ghost" href="#" onclick="openDemo(event)">Details</a>
             </div>
           </div>
         </article>
@@ -554,14 +651,13 @@
             </svg>
           </div>
           <div class="body">
-            <h4 style="margin:0">Task Management App</h4>
-            <p style="margin:0;color:var(--muted)">A lightweight task manager focusing on fast interactions and clean UI for productivity.</p>
+            <h4 style="margin:0">JobMadeEasy - Job Management Platform</h4>
+            <p style="margin:0;color:var(--muted)">Designed and developed a full-stack platform with JWT authentication and structured data workflows.</p>
             <div class="badges">
-              <span class="badge">React</span><span class="badge">Supabase</span><span class="badge">Node.js</span>
+              <span class="badge">MongoDB</span><span class="badge">Express.js</span><span class="badge">React.js</span><span class="badge">Node.js</span><span class="badge">JWT</span><span class="badge">Nodemailer</span>
             </div>
             <div class="actions" style="margin-top:8px;display:flex;gap:10px">
-              <a class="ghost" href="#" onclick="openDemo(event)">Live Demo</a>
-              <a class="ghost" href="#" onclick="openGit(event)">GitHub</a>
+              <a class="ghost" href="#" onclick="openDemo(event)">Details</a>
             </div>
           </div>
         </article>
@@ -579,16 +675,93 @@
             </svg>
           </div>
           <div class="body">
-            <h4 style="margin:0">Event Landing Page</h4>
-            <p style="margin:0;color:var(--muted)">An immersive landing page with animated gradients and ticketing CTA experience.</p>
+            <h4 style="margin:0">Consultation System - Student-Faculty Platform</h4>
+            <p style="margin:0;color:var(--muted)">Created a database-driven web platform for appointment scheduling, communication, and consultation workflows.</p>
             <div class="badges">
-              <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">Animations</span>
+              <span class="badge">PHP</span><span class="badge">MariaDB</span><span class="badge">HTML</span><span class="badge">CSS</span>
             </div>
             <div class="actions" style="margin-top:8px;display:flex;gap:10px">
-              <a class="ghost" href="#" onclick="openDemo(event)">Live Demo</a>
-              <a class="ghost" href="#" onclick="openGit(event)">GitHub</a>
+              <a class="ghost" href="#" onclick="openDemo(event)">Details</a>
             </div>
           </div>
+        </article>
+
+        <article class="project glass">
+          <div class="thumb">
+            <svg width="120" height="80" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project thumb">
+              <rect rx="12" width="240" height="160" fill="transparent"/>
+              <defs>
+                <linearGradient id="p4" x1="0" x2="1"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#8a3ffc"/></linearGradient>
+              </defs>
+              <rect x="12" y="12" width="216" height="136" rx="10" fill="url(#p4)" opacity="0.12"/>
+              <text x="50%" y="50%" fill="#e9eef8" font-size="17" text-anchor="middle" dominant-baseline="middle">SheRise Platform</text>
+            </svg>
+          </div>
+          <div class="body">
+            <h4 style="margin:0">SheRise - Platform for Underserved Women</h4>
+            <p style="margin:0;color:var(--muted)">Designed a platform focused on accessibility, user flow, and rapid experimentation to support underserved communities.</p>
+            <div class="badges">
+              <span class="badge">Cayu Platform</span><span class="badge">Low-code</span><span class="badge">AI-assisted</span>
+            </div>
+            <div class="actions" style="margin-top:8px;display:flex;gap:10px">
+              <a class="ghost" href="#" onclick="openDemo(event)">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project glass">
+          <div class="thumb">
+            <svg width="120" height="80" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project thumb">
+              <rect rx="12" width="240" height="160" fill="transparent"/>
+              <defs>
+                <linearGradient id="p5" x1="0" x2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#41e0ff"/></linearGradient>
+              </defs>
+              <rect x="12" y="12" width="216" height="136" rx="10" fill="url(#p5)" opacity="0.12"/>
+              <text x="50%" y="50%" fill="#e9eef8" font-size="16" text-anchor="middle" dominant-baseline="middle">Wizard's Duel</text>
+            </svg>
+          </div>
+          <div class="body">
+            <h4 style="margin:0">Wizard's Duel Game</h4>
+            <p style="margin:0;color:var(--muted)">Developed an interactive Python game with real-time rendering, input handling, and graphics logic.</p>
+            <div class="badges">
+              <span class="badge">Python</span><span class="badge">PyOpenGL</span><span class="badge">OpenGL GLUT</span>
+            </div>
+            <div class="actions" style="margin-top:8px;display:flex;gap:10px">
+              <a class="ghost" href="#" onclick="openDemo(event)">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" aria-label="Certifications">
+      <div class="intro-title">
+        <div>
+          <p class="section-title">Certifications & Activities</p>
+          <p class="section-sub">Selected recognition and leadership activities that demonstrate initiative and social impact.</p>
+        </div>
+      </div>
+
+      <div class="cert-grid reveal">
+        <article class="cert-card glass">
+          <h4 style="margin:0 0 8px">Delegate - AYIMUN, UNESCO</h4>
+          <p style="margin:0;color:var(--muted)">Asia Youth International Model United Nations | March 2022</p>
+        </article>
+
+        <article class="cert-card glass">
+          <h4 style="margin:0 0 8px">Volunteer - 16th BRAC University Convocation</h4>
+          <p style="margin:0;color:var(--muted)">Event operations and coordination support | 2025</p>
+        </article>
+
+        <article class="cert-card glass">
+          <h4 style="margin:0 0 8px">Volunteering Certificate - Global Wall of Goodwill</h4>
+          <p style="margin:0;color:var(--muted)">Social Impact Lab, BRAC University | 2023</p>
+        </article>
+
+        <article class="cert-card glass">
+          <h4 style="margin:0 0 8px">Aspire Leaders Program</h4>
+          <p style="margin:0;color:var(--muted)">Professional growth and leadership learning | 2025</p>
         </article>
       </div>
     </section>
@@ -598,7 +771,7 @@
       <div class="intro-title">
         <div>
           <p class="section-title">Contact</p>
-          <p class="section-sub">Let's build something together — reach out for internships, freelance, or collaborations.</p>
+          <p class="section-sub">Open to software engineering internships, collaborative projects, and opportunities in data-oriented systems.</p>
         </div>
       </div>
 
@@ -629,7 +802,7 @@
           <p style="color:var(--muted);margin-top:6px">Prefer email? Reach me at</p>
           <a href="mailto:sabirar405@gmail.com" style="color:var(--accent-1);font-weight:700;display:inline-block;margin:10px 0">sabirar405@gmail.com</a>
           <div style="height:12px"></div>
-          <p style="color:var(--muted)">I'm available for internships, freelance projects, and collaborative work. I aim to respond within 48 hours.</p>
+          <p style="color:var(--muted)">I am available for internships, project collaborations, and entry-level opportunities in software and data engineering. I aim to respond within 48 hours.</p>
         </aside>
       </div>
     </section>
@@ -638,7 +811,7 @@
     <footer>
       <div style="max-width:var(--max-width);margin:0 auto;padding:8px 24px">
         <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.02),transparent);margin-bottom:12px"></div>
-        <div>Designed &amp; Developed by Sabira Rahman</div>
+        <div>Designed &amp; Developed by Sabira Rahman | Computer Science Student, BRAC University</div>
       </div>
     </footer>
   </main>
@@ -736,7 +909,7 @@
     /* =========================================================================
        Typing effect for roles (looping)
        ========================================================================= */
-    const roles = ['Junior Frontend Developer','App Developer','UI Enthusiast'];
+    const roles = ['Computer Science Student','Software & Data Engineer Intern','MERN Stack Developer'];
     let roleIndex = 0;
     let charIndex = 0;
     let typing = true;
